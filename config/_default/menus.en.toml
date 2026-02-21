@@ -1,175 +1,64 @@
+# `identifier` and `parent` are linked
 [[main]]
-  name       = 'Fork!'
-  identifier = 'fork'
-  weight     = 3
-  url        = 'https://github.com/foxihd/hugo-brewm'
+  name       = ''
+  identifier = 'Github profile yvinc'
+  weight     = 4
+  url        = 'https://github.com/yvinc'
   pre        = 'github'
   [[main.params]]
     target   = '_blank'
 
+# About me
 [[main]]
-  name       = 'Series'
-  identifier = 'series'
-  pageRef    = '/series'
+  name       = 'About :)'
+  identifier = 'About me'
   weight     = 1
+  url        = 'https://yvinc.github.io/site-experiment/categories/about-me/' # change it
+  pre        = 'about'
+  [[main.params]]
+    target   = '_blank'
 
-  [[main]]
-    name       = 'A Series'
-    identifier = 'series1'
-    pageRef    = '/'
-    parent     = 'series'
-    Post       = 'Example with post/description'
-
-  [[main]]
-    name       = 'Another series'
-    identifier = 'series2'
-    pageRef    = '/'
-    parent     = 'series'
-
-  [[main]]
-    name       = 'Sustainable Development'
-    identifier = 'series.sdg'
-    pageRef    = '/'
-    parent     = 'series'
-    Post       = 'Nested Menu example'
-
-    [[main]]
-      name       = 'No Poverty'
-      identifier = 'series.sdg.1'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Zero Hunger'
-      identifier = 'series.sdg.2'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Good Health and Well-being'
-      identifier = 'series.sdg.3'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Quality Education'
-      identifier = 'series.sdg.4'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Gender Equality'
-      identifier = 'series.sdg.5'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Clean Water and Sanitation'
-      identifier = 'series.sdg.6'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Affordable and Clean Energy'
-      identifier = 'series.sdg.7'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Decent Work and Economic Growth'
-      identifier = 'series.sdg.8'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Industry, Innovation and Infrastructure'
-      identifier = 'series.sdg.9'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Reduced Inequalities'
-      identifier = 'series.sdg.10'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Sustainable Cities and Communities'
-      identifier = 'series.sdg.11'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Responsible Consumption and Production'
-      identifier = 'series.sdg.12'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Climate Action'
-      identifier = 'series.sdg.13'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Life Below Water'
-      identifier = 'series.sdg.14'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Life on Land'
-      identifier = 'series.sdg.15'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Peace, Justice and Strong Institutions'
-      identifier = 'series.sdg.16'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
-    [[main]]
-      name       = 'Partnerships for the Goals'
-      identifier = 'series.sdg.17'
-      pageRef    = '/'
-      parent     = 'series.sdg'
-
+# Posts
 [[main]]
-  name       = 'Works'
-  identifier = 'works'
+  name       = 'Posts'
+  identifier = 'posts'
   pageRef    = '/'
   weight     = 2
 
-  [[main]]
-    name       = 'Commission'
-    identifier = 'commission'
-    pageRef    = '/'
-    parent     = 'works'
-    Post       = 'Example Menu'
-    weight     = 1
+# projects
+[[main]]
+  name       = 'Projects'
+  identifier = 'projects'
+  weight     = 3
+  url        = 'https://yvinc.github.io/site-experiment/categories/about-me/' # change it
+  pre        = 'projects'
+  [[main.params]]
+    target   = '_blank'
 
   [[main]]
-    name       = 'Project'
-    identifier = 'project'
+    name       = 'All Posts'
+    identifier = 'all posts'
     pageRef    = '/'
-    parent     = 'works'
-    Post       = 'My current projects'
-    weight     = 2
+    parent     = 'posts'
+    Post       = ''             # preview title in grey
+    weight     = 1
 
   [[main]]
     name       = 'Gallery'
     identifier = 'gallery'
     pageRef    = '/'
-    parent     = 'works'
-    Post       = 'Well, actually, silly stuff'
-    weight     = 3
+    parent     = 'posts'
+    Post       = 'some silly stuffs 🤓'
+    weight     = 2
 
+# The "More Menu"
 [[more]]
-  name       = 'Resources'
-  identifier = 'resources'
+  name       = 'Home'
+  identifier = 'home'
   pageRef    = '/'
   weight     = 3
+  pre        = 'home'
+
 
 [[more]]
   name       = 'About'
@@ -191,25 +80,6 @@
   parent     = 'about'
   weight     = 2
 
-[[author-name]]
-  name       = ''
-  identifier = '@user-name'
-  pageRef    = '/'
-  weight     = 1
-  pre        = 'bluesky'
-
-[[author-name]]
-  identifier = 'discord'
-  pageRef    = '/'
-  weight     = 2
-  pre        = 'discord'
-
-[[author-name]]
-  name       = ''
-  identifier = 'mastodon'
-  pageRef    = '/'
-  weight     = 3
-  pre        = 'mastodon'
 
 [[more]]
   name       = 'More Menu'
@@ -235,6 +105,29 @@
           name       = 'Deep'
           identifier = 'more.menu.that.never.too.deep'
           parent     = 'more.menu.that.never.too'
+
+
+
+[[author-name]]
+  name       = ''
+  identifier = '@user-name'
+  pageRef    = '/'
+  weight     = 1
+  pre        = 'bluesky'
+
+[[author-name]]
+  identifier = 'discord'
+  pageRef    = '/'
+  weight     = 2
+  pre        = 'discord'
+
+[[author-name]]
+  name       = ''
+  identifier = 'mastodon'
+  pageRef    = '/'
+  weight     = 3
+  pre        = 'mastodon'
+
 
 [[footer]]
   identifier = 'figma'
