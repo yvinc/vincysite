@@ -10,7 +10,7 @@
 
 # About me
 [[main]]
-  name       = 'About :)'
+  name       = 'About'
   identifier = 'About me'
   weight     = 1
   pageRef    = '/author/About'
